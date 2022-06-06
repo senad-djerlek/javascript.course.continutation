@@ -12,7 +12,8 @@ body {
     padding: 1rem;
     background-color: rgb(246, 245, 201);
   }
-  
+
+
   .control {
     margin-bottom: 1rem;
   }
@@ -65,4 +66,8 @@ body {
   
   #remaining-chars.warning {
     color:rgb(211, 109, 26);
+  }
+
+  .class {
+    border: 2px solid, red;
   }
