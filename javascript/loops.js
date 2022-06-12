@@ -19,3 +19,11 @@ for (const propertyName in loggedInUser){
     console.log(loggedInUser[propertyName]); // getting the values from the keys 
     // loggedInUser.name
 }
+
+let isFinished = false;
+
+while (!isFinished) {
+   isFinished =  confirm("Do you want to quit?")
+}
+
+console.log("Done");
