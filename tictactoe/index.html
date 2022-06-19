@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tictactoe/style.css" />
     <script src="/tictactoe/app.js" defer></script>
+    <link rel="stylesheet" href="/tictactoe/overlays.css">
+    <link rel="stylesheet" href="/tictactoe/configuration.css">
     <title>Tic Tac Toe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,18 +17,19 @@
     />
   </head>
   <body>
+    <div id="backdrop"></div>
     <header id="main-header">
       <h1>Play Tic, Tac, Toe</h1>
       <p>Built with HTML,CSS, JavaScript and - of course- lots of love</p>
     </header>
     <main>
-      <aside>
+      <aside class="modal" id="config-overlay">
         <header>
             <h2>Choose your name</h2>
         </header>
         
         <form>
-          <div>
+          <div class="form-control">
             <label for="playername">Player name</label>
             <input type="text" name="playername" id="playerName" />
           </div>
@@ -42,7 +45,7 @@
             <article>
               <h2>Player 1</h2>
               <h3>Player Name</h3>
-              <p>X</p>
+              <p class="player-symbol">X</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
@@ -50,7 +53,7 @@
             <article>
               <h2>Player 1</h2>
               <h3>Player Name</h3>
-              <p>O</p>
+              <p class="player-symbol">O</p>
               <button class="btn btn-alt">Edit</button>
             </article>
           </li>
