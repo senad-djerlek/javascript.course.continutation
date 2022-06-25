@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/tictactoe/styles/style.css" />
-    <link rel="stylesheet" href="/tictactoe/styles/overlays.css">
-    <link rel="stylesheet" href="/tictactoe/styles/configuration.css">
-    <link rel="stylesheet" href="/tictactoe/styles/game.css">
+    <link rel="stylesheet" href="/tictactoe/styles/overlays.css" />
+    <link rel="stylesheet" href="/tictactoe/styles/configuration.css" />
+    <link rel="stylesheet" href="/tictactoe/styles/game.css" />
     <title>Tic Tac Toe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/tictactoe/game.css">
+    <link rel="stylesheet" href="/tictactoe/game.css" />
     <script src="/tictactoe/scripts/config.js" defer></script>
     <script src="/tictactoe/scripts/game.js" defer></script>
-    <script src="/tictactoe/scripts/app.js" defer> </script>
+    <script src="/tictactoe/scripts/app.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -29,16 +29,19 @@
     <main>
       <aside class="modal" id="config-overlay">
         <header>
-            <h2>Choose your name</h2>
+          <h2>Choose your name</h2>
         </header>
-        
+
         <form>
           <div class="form-control">
             <label for="playername">Player name</label>
-            <input type="text" name="playername" id="playerName" />
+            <input type="text" name="playername" id="playerName" required />
           </div>
+          <p id="config-errors"></p>
           <div>
-            <button type="button" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
+              Cancel
+            </button>
             <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
